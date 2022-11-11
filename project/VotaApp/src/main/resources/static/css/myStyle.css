@@ -1,0 +1,79 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+header{
+  display: flex;
+  background-color: #2196f3;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.logo-project{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 50px; 
+  margin-right: 10px;
+}
+nav a {
+  font-weight: 600;
+  padding-right: 11px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover{
+  color: black;
+}
+
+@media (max-width:600px){
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+}
+section h1{
+  text-align: center;
+}
+section p{
+  text-align: justify;
+}
+
+#contenedor-cand{
+  display: flex;
+margin-left: 15px;
+}
+@media (max-width:830px){
+  #contenedor-cand{
+    flex-direction: column;
+  
+  }
+}
+.candidato{
+  width: 400px;
+  text-align: center;
+}
+.candidato h2{
+ font-size: 18px;
+}
+.icono{
+  display: flex;
+  padding-top: 5px;
+}
+.icono p{
+	padding-top:10px ;
+}
+.info{
+  display: flex;
+  padding-top: 5px;
+}
+.info a:hover{
+  color: mediumslateblue;
+}
+section{
+  margin: 15px;
+}
