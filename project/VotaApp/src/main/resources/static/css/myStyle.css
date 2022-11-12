@@ -38,6 +38,7 @@ nav a:hover{
 }
 section h1{
   text-align: center;
+  font-size: 24px;
 }
 section p{
   text-align: justify;
@@ -50,12 +51,16 @@ margin-left: 15px;
 @media (max-width:830px){
   #contenedor-cand{
     flex-direction: column;
-  
+  }
+  .candidato{
+	  margin-top: 5px;
   }
 }
 .candidato{
   width: 400px;
   text-align: center;
+  border: 1px solid black;
+  margin-right: 5px;
 }
 .candidato h2{
  font-size: 18px;
@@ -69,7 +74,8 @@ margin-left: 15px;
 }
 .info{
   display: flex;
-  padding-top: 5px;
+  margin-left: 8px;
+  margin-bottom: 5px;
 }
 .info a:hover{
   color: mediumslateblue;
