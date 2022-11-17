@@ -4,28 +4,73 @@
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  type="text/css" th:href="@{/css/myStyle.css}">
-  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
-  <title>Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/myStyle.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<title>Elecciones Colombia</title>
+	<link rel="icon " href="..\img\bandera.jpg">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+	
 </head>
 
+
 <body>
-  <header>
-    <div class="logo-project">
-      <img th:src="@{/img/voto.png}" alt="logo" class="logo">
-      <h2 class="name-project">Vota App</h2>
-    </div>
+	<header>
+		<div class="logo-project">
+			<img th:src="@{/img/voto.png}" alt="logo" class="logo">
+			<h2 class="name-project">Vota App</h2>
 
-    <nav>
-      <a th:href="@{/inicio}">Inicio</a>
-      <a th:href="@{/votar}">Votar</a>
-      <a th:href="@{/estadistica}">Estadistica Electoral</a>
-    </nav>
-  </header>
- 
+		</div>
+
+		<nav>
+			<a th:href="@{/inicio}">Inicio</a>
+			<a th:href="@{/votar}">Votar</a>
+			<a th:href="@{/estadistica}">Estadistica Electoral</a>
+		</nav>
+	</header>
+	
+	
+	<aside id="izq">
+	
+	
+	
+	<div id="contenedor-can">
+
+		<div class="candidato">
+				<div>
+					<h1>Votacion por Candidatos</h1>
+    <a href="https://parzibyte.me/blog"></a>
+    <a href="../index.html"> </a>
+    <canvas id="grafica"></canvas>
+    <script src="script.js"></script>
+				</div>
+		</div>
+
+
+		
+		
+	
+	
+	
+			<section id="der">
+		<img th:src="@{/img/estadisticas.webp}" style="display: block; width:500px; margin: auto;">
+		<div align="center">
+			<button type="button" class="btn btn-outline-warning" style="width:200px; height:60px; margin: auto;">Votos
+				por Candidato</button><br>
+			<button type="button" class="btn btn-outline-primary" style="width:200px; height:60px; margin: auto;">Votos
+				por Regiones</button><br>
+			<button type="button" class="btn btn-outline-danger"
+				style="width:200px; height:60px; margin: auto;">Resultados Consolidados</button>
+
+		</div>
+	</section>
+	
+	
 </body>
-
 </html>

@@ -9,7 +9,6 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  
 }
 .logo-project{
   display: flex;
@@ -32,17 +31,12 @@ nav a:hover{
 @media (max-width:600px){
   header{
     flex-direction: column;
- 
   }
   nav{
     padding: 10px 0px;
   }
 }
 section h1{
-  text-align: center;
-  font-size: 34px;
-}
-section h2{
   text-align: center;
   font-size: 24px;
 }
@@ -88,34 +82,4 @@ margin-left: 15px;
 }
 section{
   margin: 15px;
-}
-
-
-
-#izq{
-	width:80%;
-	margin: 30px auto;
-	padding: 15px auto;
-	float: left;
-}
-
-
-#der{
-	width:1300%;
-	margin: 15px auto;
-	padding: 15px auto;
-	float: right;
-}
-
-
-
-#contenedor-can{
-  display: flex;
-margin-left: 10px;
-}
-@media (max-width:930px){
-  #contenedor-can{
-    flex-direction: column;
-  }
-
 }

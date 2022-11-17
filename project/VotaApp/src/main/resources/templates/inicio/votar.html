@@ -9,22 +9,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"  type="text/css" th:href="@{/css/myStyle.css}">
   <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
-  <title>Home</title>
+  <title>Votar</title>
+  <link  rel = "icon " href="..\img\bandera.jpg" >
+  
+ 
 </head>
 
 <body>
-  <header>
+  <header> 
     <div class="logo-project">
       <img th:src="@{/img/voto.png}" alt="logo" class="logo">
       <h2 class="name-project">Vota App</h2>
+      
+     
     </div>
 
     <nav>
        <a th:href="@{/inicio}">Inicio</a>
-      <a th:href="@{/votar}">Votar</a>
       <a th:href="@{/estadistica}">Estadistica Electoral</a>
     </nav>
   </header>
+  
+  <section>
+		<!--introductorio de la pagina-->
+		<h1>ES HORA DE ELEGIR</h1>
+		<h2> <b>  En esta seccion VOTE por el candidato de su preferencia  </b> </h2>
+		  <hr width="100%;">
+		 
+		<p>Para elegir su candidato pulse sobre el boton VOTAR que se encuentra junto a la foto de cada uno de ellos, recuerde que solo lo podra hacer una sola vez 	</p>
+		
+	</section>
+	<div id="contenedor-cand">
+
+		<div class="candidato">
+				<div>
+					<h2> <b> Juan Perez </b> </h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px  margin: auto;">
+					<button type="button" class="btn btn-outline-dark"style="width:100px; height:50px; margin: auto;"> <b> <FONT SIZE=5>Votar  </font></b></button>
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx1</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-1}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2><b>Claudia Garcia</b></h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+					<button type="button" class="btn btn-outline-dark"style="width:100px; height:50px; margin: auto;"> <b> <FONT SIZE=5>Votar  </font></b></button>
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx2</p>
+					
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-2}"><em>Mas Informacion</em></a>
+					
+				</div>	
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2><b>Julia Correa</b></h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+					<button type="button" class="btn btn-outline-dark"style="width:100px; height:50px; margin: auto;"> <b> <FONT SIZE=5>Votar  </font></b></button>
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					
+					<p>Partido xxxxx3</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-3}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2><b>Carlos Miranda</b></h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+					<button type="button" class="btn btn-outline-dark"style="width:100px; height:50px; margin: auto;"> <b> <FONT SIZE=5>Votar  </font></b></button>
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					
+					<p>Partido xxxxx4</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-4}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+	</div>
  
 </body>
 

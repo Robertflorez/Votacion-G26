@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/myStyle.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<title>Home</title>
+</head>
+
+<body>
+	<header>
+		<div class="logo-project">
+			<img th:src="@{/img/voto.png}" alt="logo" class="logo">
+			<h2 class="name-project">Vota App</h2>
+		</div>
+
+		<nav>
+			<a th:href="@{/inicio}">Inicio</a>
+			<a th:href="@{/votar}">Votar</a>
+			<a th:href="@{/estadistica}">Estadistica Electoral</a>
+		</nav>
+	</header>
+	<section>
+		<!--introductorio de la pagina-->
+		<h1>Titulo Principal</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aperiam fugit temporibus at rerum suscipit
+			accusantium quae id quod ducimus. Repellat distinctio molestiae numquam sint delectus aliquam vitae nisi
+			itaque.
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti id minima repellat, quam eos at facere
+			doloribus
+			rem cupiditate unde, soluta temporibus. Optio expedita tempore ipsum incidunt eos minus. Sint!</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, quaerat excepturi animi unde accusantium
+			earum
+			veniam eligendi aspernatur. Quos asperiores expedita quaerat similique eum? Laudantium harum facere tempore
+			temporibus. Quod?</p>
+	</section>
+	<div id="contenedor-cand">
+
+		<div class="candidato">
+				<div>
+					<h2>Juan Perez</h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx1</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-1}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2>Claudia Garcia</h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx2</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-2}"><em>Mas Informacion</em></a>
+				</div>	
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2>Julia Correa</h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx3</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-3}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+
+		<div class="candidato">
+				<div>
+					<h2>Carlos Miranda</h2>
+				</div>
+				<div class="img-cand">
+					<img th:src="@{/img/candidato.png}" alt="Juan Perez" width="200px">
+				</div>
+				<div class="icono">
+					<img th:src="@{/img/icono.png}" alt="Partido" width="50px">
+					<p>Partido xxxxx4</p>
+				</div>
+				<div class="info">
+					<a th:href="@{/cand-4}"><em>Mas Informacion</em></a>
+				</div>
+		</div>
+	</div>
+</body>
+
+</html>
