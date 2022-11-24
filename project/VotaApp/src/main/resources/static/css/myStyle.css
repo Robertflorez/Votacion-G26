@@ -38,18 +38,24 @@ nav a:hover{
     padding: 10px 0px;
   }
 }
-section h1{
-  text-align: center;
-  font-size: 34px;
+
+/* Cuerpo*/
+section{
+  margin: 15px;
 }
-section h2{
+section h3{
   text-align: center;
-  font-size: 24px;
-}
-section p{
-  text-align: justify;
+  font-size: 25px;
 }
 
+p{
+  text-align: justify;
+}
+.red::first-line{
+	color: red;
+	font-weight: 700;
+}
+/*Cuadro candidato*/
 #contenedor-cand{
   display: flex;
 margin-left: 15px;
@@ -71,25 +77,26 @@ margin-left: 15px;
 .candidato h2{
  font-size: 18px;
 }
-.icono{
-  display: flex;
-  padding-top: 5px;
-}
-.icono p{
-	padding-top:10px ;
-}
 .info{
-  display: flex;
-  margin-left: 8px;
-  margin-bottom: 5px;
+ margin: 8px;
 }
-.info a:hover{
-  color: mediumslateblue;
+.icono a:hover{
+  color: #8338ec;
 }
-section{
-  margin: 15px;
+.icono a{
+font-weight: 600;
+text-decoration: none;
+}
+.icono{
+  flex-direction: column;
+  padding-bottom: 15px;
 }
 
+.candidato button{
+	margin: 10px;
+	width: 60%;
+}
+/*--------------------------------------------------------------------------------------*/
 
 
 #izq{

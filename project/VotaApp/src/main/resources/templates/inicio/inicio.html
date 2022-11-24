@@ -29,8 +29,8 @@
 	</header>
 	<section>
 		<!--introductorio de la pagina-->
-		<h1>ELECCIONES COLOMBIA 2022</h1>
-		<h1>Bienvenidos</h1>
+		<h3>ELECCIONES COLOMBIA 2022</h3>
+		<h3>Bienvenidos</h3>
 		<p> Estimado Ciudadano, bienvenido a elegir el nuevo presidente de Colombia para el periodo 2022-2026</p>
 		<p>
 			Según la constitución de Colombia, pueden ejercer su derecho a sufragio los ciudadanos mayores de 18 años de
@@ -38,7 +38,7 @@
 			condenados. Las personas que se encuentran en centros de reclusión, tales como cárceles o reformatorios,
 			podrán votar en los establecimientos que determine la Registraduría Nacional. La inscripción en el registro
 			civil no es automática, el ciudadano debe dirigirse a la sede regional de la Registraduría para inscribir su
-			identificación personal en un puesto de votación.4
+			identificación personal en un puesto de votación.<br>
 
 			La elección de presidente de la república se hace junto con la del vicepresidente, siendo este último su
 			fórmula; la estadía en el cargo será de cuatro años sin posibilidad de reelección. El proceso de elección no
@@ -47,7 +47,7 @@
 			mayor de treinta años. La primera vuelta se celebrará en febreo, que para el 2024 será el día 30, y
 			resultará ganador quien haya obtenido la mitad más uno de los votos. En caso de que ninguno de los
 			aspirantes obtenga esta ponderación de los votos, los dos candidatos que en primera vuelta hayan obtenido la
-			mayoría de los votos irán a la segunda vuelta; el ganador será quien logre la mayoría de los votos.5
+			mayoría de los votos irán a la segunda vuelta; el ganador será quien logre la mayoría de los votos.<br>
 
 			Los organismos encargados de velar administrativamente por el evento son la Registraduría Nacional del
 			Estado Civil y el consejo Nacional Electoral.
@@ -56,15 +56,15 @@
 			votación obtendrá una curul en el Senado y su fórmula vicepresidencia obtendrá una curul en la Cámara de
 			Representantes.
 		</p>
-		<p>Usted podra votar por uno de los cuatro candidatos que participan en este debate electoral a continuacion
-			encontrara las imagenes de cada uno de ellos y si desea conocer mas sobre algun candidato podra
-			pulsar el link <b> Mas Informarcion </b> el cual lo llevara a la informacion detallada de cada candidato, su
-			hoja de
-			vida, trayectoria politica y principales obras y proyectos ejecutados, tambien podra acceder a la
-			pagina web del partido politico en el cual milita el candidato</p>
+		<p>Podrás votar por uno de los cuatro candidatos que participan en este debate electoral, a continuación
+			encontrarás las imágenes de cada uno de ellos y si quieres saber más sobre alguno de los candidatos, puedes
+			dar
+			<b>click en la imagen del candidato</b> la cual lo llevara a la informacion detallada del candidato,
+			tambien podra acceder a la pagina web del partido politico en el cual milita el candidato dando <b>click en
+				el nombre del partido</b>.
+		</p>
 		<p> <b>
-				<center> Para ejercer su derecho al voto pulse sobre la opcion Votar que se encuentra en el menu
-					pricipal </center>
+				<center> Para ejercer su derecho al voto, pulse la opción Votar del menú principal.</center>
 			</b></p>
 	</section>
 	<div id="contenedor-cand">
@@ -74,22 +74,20 @@
 				<h2>Iván Duque</h2>
 			</div>
 			<div class="img-cand">
-				<img th:src="@{/img/c1.jpg}" alt="Iván Duque" width="200px">
-			</div>
-			<div class="icono">
-				<img th:src="@{/img/p1.jpg}" alt="Partido Renovar" width="50px">
-				<p>Partido Renovar</p>
+				<a th:href="@{https://www.buscabiografias.com/biografia/verDetalle/10493/Ivan%20Duque}"><img
+						th:src="@{/img/c1.jpg}" alt="Iván Duque" width="200px" height="150px"></a>
 			</div>
 			<div class="info">
-				<a th:href="@{/cand-1}"><em>
-					<p>
-						Iván Duque Márquez (Bogotá; 1 de agosto de 1976) es un abogado, escritor y político
-						colombiano. Fue presidente de Colombia desde el 7 de agosto de 2018 hasta el 7 de agosto de
-						2022. Ejerció como senador de la República de Colombia desde el 20 de julio de 2014 hasta
-						el 10 de abril de 2018.Trabajó como representante de Colombia ante el Banco
-						Interamericano de Desarrollo.
-					</p>
-				</em></a>
+				<p>Licenciado como abogado con estudios superiores de filosofía y humanidades de la Universidad Sergio
+					Arboleda. Realizó una maestría (LLM) en Derecho Internacional Económico en la American University, y
+					Gerencia de Políticas Públicas en la Georgetown University.
+				</p>
+
+			</div>
+			<div class="icono">
+				<img th:src="@{/img/p1.png}" alt="Partido Renovar" width="50px">
+				<a th:href="@{https://www.centrodemocratico.com/pilares-del-cd#5-di%c3%a1logo-popular}"><em>Partido
+						Centro Democratico</em></a>
 			</div>
 		</div>
 
@@ -98,24 +96,20 @@
 				<h2>Claudia Lopez</h2>
 			</div>
 			<div class="img-cand">
-				<img th:src="@{/img/c2.jpg}" alt="Claudia Lopez" width="200px">
+				<a th:href="@{https://claudia-lopez.com/mi-historia/}"><img th:src="@{/img/c2.jpg}" alt="Claudia Lopez"
+						width="200px" height="150px"></a>
+			</div>
+
+			<div class="info">
+				<p>Graduada de Finanzas, Gobierno y Relaciones Internacionales en la Universidad Externado, hizo una
+					maestría en Administración Pública y Política Urbana en la Universidad de Columbia en Nueva York.
+					Fue fellow de la Universidad de Yale en 2009 y es doctora en ciencia política de la Universidad de
+					Northwestern, en Chicago, gracias a una beca Fullbright
+				</p>
 			</div>
 			<div class="icono">
 				<img th:src="@{/img/p2.jpg}" alt="Partido AlPolo" width="50px">
-				<p>Partido ALPOLO</p>
-			</div>
-			<div class="info">
-				<a th:href="@{/cand-2}"><em>
-						<p>
-							Claudia Lopez. La candidata de la Alianza Verde y el Polo Democrático (ALPOLO) remontó la
-							ventaja que le llevaba en las encuestas a Carlos Fernando Galán. López obtuvo en el boletín 14 un
-							porcentaje de los votos registrados del 35.31%. Y el apoyo de 919.420 bogotanos. Su madre, 
-							María del Carmen Hernández, fue docente y lideresa sindical.
-							Su padre, Reyes López, abandonó a su familia tras la muerte de su hermana menor, Marta. Es
-							la mayor de seis hijos, y es graduada de Finanzas y Relaciones Internacionales de la
-							Universidad Externado.
-						</p>
-					</em></a>
+				<a th:href="@{https://www.alianzaverde.org.co/nosotros/historia}"><em>Partido Alianza Verde</em></a>
 			</div>
 		</div>
 
@@ -124,22 +118,20 @@
 				<h2>Francia Marquez</h2>
 			</div>
 			<div class="img-cand">
-				<img th:src="@{/img/c3.jpg}" alt="Francia Marquez" width="200px">
+				<a th:href="@{https://mujeresquehacenlahistoria.blogspot.com/2022/07/siglo-xx-francia-marquez.html}"><img
+						th:src="@{/img/c3.jpg}" alt="Francia Marquez" width="200px" height="150px"></a>
+			</div>
+
+			<div class="info">
+				<p>Francia Márquez es abogada por la Universidad Santiago de Cali, y en la actualidad se encuentra
+					cursando una especialización en escrituras creativas de la Universidad ICESI. Líder social y
+					activista ambiental en lucha contra el extractivismo indiscriminado de las mineras de su país desde
+					hace décadas.
+				</p>
 			</div>
 			<div class="icono">
-				<img th:src="@{/img/p3.jpg}" alt="Partido Democratico" width="50px">
-				<p>Partido Democratico</p>
-			</div>
-			<div class="info">
-				<a th:href="@{/cand-3}"><em>
-					<p>
-						Francia Elena Márquez Mina (Suárez, Cauca, 1 de diciembre de 1981) es una líder social,
-						activista medioambiental, defensora de derechos humanos, feminista, abogada, y política
-						colombiana. Desde el 7 de agosto de 2022 es la vicepresidenta de la República de Colombia.
-						Es la segunda mujer en ser vicepresidenta de la nación y la primera de origen
-						afrocolombiano.
-					</p>
-				</em></a>
+				<img th:src="@{/img/p3.png}" alt="Partido Democratico" width="50px">
+				<a th:href="@{https://es.wikipedia.org/wiki/Pacto_Hist%C3%B3rico}"><em>Pacto Histórico</em></a>
 			</div>
 		</div>
 
@@ -148,22 +140,23 @@
 				<h2>Humberto de la Calle</h2>
 			</div>
 			<div class="img-cand">
-				<img th:src="@{/img/c4.jpg}" alt="Humberto de la Calle" width="200px">
+				<a th:href="@{https://delacalle.com.co/soy-de-la-calle/}"><img th:src="@{/img/c4.jpg}"
+						alt="Humberto de la Calle" width="200px" height="150px"></a>
+			</div>
+
+			<div class="info">
+				<p>Abogado, político, profesor, diplomático, escritor colombiano; con experiencia en políticas y asuntos
+					públicos, derecho constitucional y administrativo. fue ministro del Interior en el gobierno de
+					Andrés Pastrana, y como embajador ante la OEA.
+				</p>
+				<a th:href="@{/cand-4}"><em>
+
+					</em></a>
 			</div>
 			<div class="icono">
-				<img th:src="@{/img/p4.jpg}" alt="Partido republicano" width="50px">
-				<p>Partido Republicano</p>
-			</div>
-			<div class="info">
-				<a th:href="@{/cand-4}"><em>
-					<p>
-						Humberto de La Calle Lombana (Manzanares, Caldas, 14 de julio de 1946), es un abogado,
-						político, profesor, diplomático, escritor colombiano; con experiencia en políticas y asuntos
-						públicos, derecho constitucional y administrativo. Pese a haber sido una ficha clave del
-						Partido Liberal Colombiano en el pasado, en la actualidad es independiente. Es senador
-						electo para el periodo 2022-2026.
-					</p>
-				</em></a>
+				<img th:src="@{/img/p4.png}" alt="Partido republicano" width="50px">
+				<a th:href="@{https://es.wikipedia.org/wiki/Partido_Verde_Ox%C3%ADgeno}"><em>Partido Verde
+						Oxígeno</em></a>
 			</div>
 		</div>
 	</div>
