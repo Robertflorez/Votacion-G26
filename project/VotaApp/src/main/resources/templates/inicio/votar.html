@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
 	<title>Votar</title>
 	<link rel="icon " href="..\img\bandera.jpg">
+	<script type="text/javascript" th:src="@{/js/myScript.js}"></script>
 
 
 </head>
@@ -44,7 +45,7 @@
 			<div class="img-cand">
 				<img th:src="@{/img/c1.jpg}" alt="Iván Duque" width="200px" height="150px">
 			</div>
-			<button type="button" class="btn btn-danger">VOTAR</button>
+			<button type="button" class="btn btn-danger"onclick="javaScript:votapp(1);">VOTAR</button>
 		</div>
 		
          <div class="candidato">
@@ -54,7 +55,7 @@
 			<div class="img-cand">
 				<img th:src="@{/img/c2.jpg}" alt="Iván Duque" width="200px" height="150px">
 			</div>
-			<button type="button" class="btn btn-danger">VOTAR</button>
+			<button type="button" class="btn btn-danger"onclick="javaScript:votapp(2);">VOTAR</button>
 		</div>
 		
 		<div class="candidato">
@@ -64,7 +65,7 @@
 			<div class="img-cand">
 				<img th:src="@{/img/c3.jpg}" alt="Iván Duque" width="200px" height="150px">
 			</div>
-			<button type="button" class="btn btn-danger">VOTAR</button>
+			<button type="button" class="btn btn-danger"onclick="javaScript:votapp(3);">VOTAR</button>
 		</div>
 		
 		<div class="candidato">
@@ -74,7 +75,7 @@
 			<div class="img-cand">
 				<img th:src="@{/img/c4.jpg}" alt="Iván Duque" width="200px" height="150px">
 			</div>
-			<button type="button" class="btn btn-danger">VOTAR</button>
+			<button type="button" class="btn btn-danger"onclick="javaScript:votapp(4);">VOTAR</button>
 		</div>
 	</div>
 

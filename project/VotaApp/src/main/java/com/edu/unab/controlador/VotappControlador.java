@@ -21,4 +21,10 @@ public class VotappControlador {
 		return "/inicio/estadistica";
 	}
 	
+	
+	@GetMapping("/login")
+	public String loginApp() {
+		return "/login";
+	}
+	
 }

@@ -13,6 +13,8 @@
 	<link rel="icon " href="..\img\bandera.jpg">
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 	<link rel="stylesheet" href="style.css">
+	
+	<script type="text/javascript" th:src="@{/js/myScript.js}"></script>
 
 </head>
 
@@ -59,7 +61,7 @@
 				<img th:src="@{/img/estadisticas.webp}" style="display: block; width:500px; margin: auto;">
 				<div align="center">
 					<button type="button" class="btn btn-outline-warning"
-						style="width:200px; height:60px; margin: auto;">Votos
+						style="width:200px; height:60px; margin: auto;"onclick="javascript:resultados();">Votos
 						por Candidato</button><br>
 					<button type="button" class="btn btn-outline-primary"
 						style="width:200px; height:60px; margin: auto;">Votos
