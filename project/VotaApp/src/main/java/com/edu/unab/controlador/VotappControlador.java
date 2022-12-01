@@ -27,4 +27,13 @@ public class VotappControlador {
 		return "/login";
 	}
 	
+	@GetMapping("/invalido")
+	public String invalido() {
+		return "/datos-incorrecto";
+	}
+	
+	@GetMapping("/inexistente")
+	public String inexistente() {
+		return "/user-inexistente";
+	}
 }

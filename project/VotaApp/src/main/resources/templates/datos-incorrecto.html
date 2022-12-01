@@ -20,10 +20,12 @@
 
 		</div>
 	</header>
-	
-	
-	
-	
+
+	<section class="nota">
+		<h3>Usuario o contraseña incorrecta :(</h3>
+	</section>
+
+
 	<section class="f-ingreso">
 		<form name="ING" th:action="@{/validar}" method="post" th:object="${votante}">
 			<div class="mb-3">
@@ -34,7 +36,8 @@
 			</div>
 			<div class="mb-3">
 				<label for="clave" class="form-label">Password: </label>
-				<input type="password" class="form-control" id="clave" name="clave" required aria-describedby="passHelp">
+				<input type="password" class="form-control" id="clave" name="clave" required
+					aria-describedby="passHelp">
 				<div id="passHelp" class="form-text">Digite su contraseña.</div>
 			</div>
 			<button type="submit" class="btn btn-primary">Ingresar</button>
@@ -43,5 +46,3 @@
 </body>
 
 </html>
-
-

@@ -1,7 +1,9 @@
 body{
   font-family: sans-serif;
   margin: 0;
+  padding-bottom: 20px;
 }
+
 header{
   display: flex;
   background-color: #2196f3;
@@ -21,6 +23,7 @@ header{
 }
 nav a {
   font-weight: 600;
+  font-size: 20px;
   padding-right: 11px;
   color: white;
   text-decoration: none;
@@ -126,3 +129,51 @@ margin-left: 10px;
   }
 
 }
+/*--------------------------------------------------------------------------------------*/
+
+.login{
+	display:flex;
+	margin:auto;
+}
+.login h2{
+	padding-top: 10px;
+}
+
+.f-ingreso{
+	width: 45%;
+	margin: auto;
+	padding-top: 5%;
+}
+
+.nota h3{
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

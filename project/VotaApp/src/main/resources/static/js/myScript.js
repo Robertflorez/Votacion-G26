@@ -21,3 +21,4 @@ function resultados() {
 		alert("Candidato "+(i+1)+": "+vCandidatos[i]+" votos - "+((vCandidatos[i]/total)*100)+"%");
 	}
 }
+

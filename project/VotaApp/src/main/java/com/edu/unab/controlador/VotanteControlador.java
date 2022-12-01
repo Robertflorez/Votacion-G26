@@ -4,7 +4,9 @@ import java.util.Optional;
 
 import javax.swing.JOptionPane;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -15,18 +17,24 @@ import com.edu.unab.servicios.VotanteService;
 @Controller
 public class VotanteControlador {
 	
+	@Autowired
 	private VotanteService votanteService;
+	Votante objVot = new Votante();
 	
 	@PostMapping("/validar")
-	public String valida(@Validated Votante votante) {
+	public String valida(@Validated Votante votante, Model model) {
 		try {
 			Optional<Votante> objVotante = votanteService.findById(votante.getIdentificacion());
-			if(objVotante != null){
-				return "redirect:/index";		
+			if(objVotante.isEmpty()){
+				return "redirect:/inexistente";		
 			}
 			else {
-				JOptionPane.showMessageDialog(null, "Usuario Desconocido!");
-				return "/login";
+				objVot=objVotante.get();
+				if(objVot.getIdentificacion()== votante.getIdentificacion() && objVot.getClave().equals(votante.getClave())) {
+					return "redirect:/inicio";
+				}else {
+					return "redirect:/invalido";
+				}
 			}
 		}
 		catch(Exception e) {
